@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autopilot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-zp-bTM">
+                                <rect key="frame" x="109" y="392" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="+1" backgroundImage="GreyOval">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusOnePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="COx-vN-7PQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a10-34-pLq">
+                                <rect key="frame" x="372" y="392" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="-1" backgroundImage="GreyOval">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusOnePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="m3v-Fr-hDg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-HG-xZf">
+                                <rect key="frame" x="109" y="216" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="+10" backgroundImage="GreyOval">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusTenPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="GNJ-ds-IIw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMF-K5-CWf">
+                                <rect key="frame" x="109" y="49" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="AUTO" backgroundImage="RedOval">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="autoPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="CpX-3C-Vn3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIT-UW-ZPG">
+                                <rect key="frame" x="372" y="216" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="-10" backgroundImage="GreyOval">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusTenPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UsN-p2-Gq5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY1-Xd-0Jt">
+                                <rect key="frame" x="372" y="49" width="120" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="STANDBY" backgroundImage="RedOval">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="standbyPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="54Y-Io-CSw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-7u-VEr">
+                                <rect key="frame" x="243" y="38" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XUc-zp-bTM" secondAttribute="bottom" constant="30" id="AcR-xt-hze"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a10-34-pLq" secondAttribute="trailing" constant="20" id="COp-OV-mt3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a10-34-pLq" secondAttribute="bottom" constant="30" id="FKK-mm-jhv"/>
+                            <constraint firstItem="AaH-HG-xZf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Fug-1f-gJO"/>
+                            <constraint firstItem="8Rl-7u-VEr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYw-L6-sDd"/>
+                            <constraint firstItem="a10-34-pLq" firstAttribute="top" secondItem="JIT-UW-ZPG" secondAttribute="bottom" constant="30" id="IqA-Bd-9y4"/>
+                            <constraint firstItem="JIT-UW-ZPG" firstAttribute="top" secondItem="oY1-Xd-0Jt" secondAttribute="bottom" constant="30" id="J0g-fY-KVT"/>
+                            <constraint firstItem="AaH-HG-xZf" firstAttribute="top" secondItem="kMF-K5-CWf" secondAttribute="bottom" constant="30" id="S4H-cv-g70"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oY1-Xd-0Jt" secondAttribute="trailing" constant="20" id="Ur3-Ni-BRc"/>
+                            <constraint firstItem="XUc-zp-bTM" firstAttribute="top" secondItem="AaH-HG-xZf" secondAttribute="bottom" constant="30" id="gmF-NN-okJ"/>
+                            <constraint firstItem="XUc-zp-bTM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="hyt-YA-d0C"/>
+                            <constraint firstItem="kMF-K5-CWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mFD-ag-qDH"/>
+                            <constraint firstItem="8Rl-7u-VEr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="oyV-Ob-EUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JIT-UW-ZPG" secondAttribute="trailing" constant="20" id="sP7-3o-xCH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="auto" destination="kMF-K5-CWf" id="QSg-C4-LlM"/>
+                        <outlet property="connectionStatus" destination="8Rl-7u-VEr" id="AZ9-jl-Sda"/>
+                        <outlet property="minusOne" destination="a10-34-pLq" id="rph-WL-Qdu"/>
+                        <outlet property="minusTen" destination="JIT-UW-ZPG" id="eXn-hK-GMh"/>
+                        <outlet property="plusOne" destination="XUc-zp-bTM" id="uqP-fz-0Ls"/>
+                        <outlet property="plusTen" destination="AaH-HG-xZf" id="Nvg-Ql-qWd"/>
+                        <outlet property="standby" destination="oY1-Xd-0Jt" id="kVF-14-eef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GreyOval" width="120" height="119"/>
+        <image name="RedOval" width="120" height="119"/>
+    </resources>
+</document>
