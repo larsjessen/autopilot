@@ -13,6 +13,7 @@ My initial idea was to use the remote control port that is located underneath th
 So instead I went for the other obvious (and less elegant) solution - simulating button presses with relays.
 
 Below is a picture of the final board. Luckily there is quite a lot of space beside the main pcb in the Autohelm, and it even has an unused screw hole for mounting.
+
 <img src="media/final_pcb.png" alt="Final PCB" width="500"/>
 
 ### Bill of materials
